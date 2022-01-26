@@ -1,0 +1,74 @@
+.card body {
+  font-family: sans-serif;
+  /* font-weight: 500; */
+}
+
+.movie__img {
+  height: 200px;
+  width: 355px;
+}
+
+.movie-modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50%;
+  background: white;
+  z-index: 10;
+  transition: all 0.5s;
+  border-radius: 5px;
+  box-shadow: 0 1rem 1.5rem rgb(0 0 0 / 30%);
+}
+
+.close-modal {
+  position: absolute;
+  top: 0px;
+  right: 10px;
+  font-size: 30px;
+  color: #333;
+  cursor: pointer;
+  border: none;
+  background: none;
+  transition: all 0.5s;
+}
+.modal__body {
+  padding: 30px;
+}
+
+.modal__title {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.modal__info-wrap {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 30px;
+}
+
+.reting__star {
+  color: rgb(255, 251, 0);
+}
+
+.modal__reting {
+  font-weight: bold;
+}
+
+.hidden {
+  display: none;
+}
+
+.trailer-modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50%;
+  height: 50%;
+  background: white;
+  z-index: 10;
+  transition: all 0.5s;
+  border-radius: 5px;
+  box-shadow: 0 1rem 1.5rem rgb(0 0 0 / 30%);
+}

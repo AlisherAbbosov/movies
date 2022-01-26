@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/fe43db86c1.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="stylesheet" href="./bootstrap/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <title>Movies</title>
+  </head>
+  <body>
+    <section class="pt-2 pb-5">
+      <div class="container">
+        <h1 class="text-center fs-2 mb-4">Movies catalog</h1>
+        <div class="row">
+          <div class="col-4">
+            <!-- FORMS -->
+            <form class="form">
+              <div class="mb-3">
+                <input
+                  type="text"
+                  class="form-control name__input"
+                  placeholder="ave"
+                  id="exampleInputText"
+                  aria-describedby="text"
+                  autocomplete="off"
+                />
+              </div>
+              <div class="mb-3">
+                <input
+                  type="number"
+                  class="form-control reting__input"
+                  placeholder="5"
+                  aria-describedby="number:"
+                  step="any"
+                />
+              </div>
+              <div class="mb-3">
+                <select class="form-select category__select">
+                  <option value="All">All</option>
+                </select>
+              </div>
+              <div class="mb-3">
+                <select
+                  class="form-select filter__movie"
+                  aria-label="Default select example"
+                >
+                  <option value="time">Filter</option>
+                  <option value="rating">Rating (hight to low)</option>
+                  <option value="year">Year (hight to low)</option>
+                </select>
+              </div>
+              <button type="submit" class="btn btn-primary w-100">
+                Search
+              </button>
+            </form>
+            <!-- LIST GROUP -->
+            <div class="mt-4">
+              <h2 class="mb-3">Bookmarked movies</h2>
+              <ul class="list-group bookmark__list fw-bolder"></ul>
+            </div>
+          </div>
+          <!-- RESULT -->
+          <div class="result col-8">
+            <p class="fw-bold mb-2">
+              Search result: <span class="result__num">39</span>
+            </p>
+            <div class="alert alert-success p-2" role="alert">
+              Use the form on the left to search for a movie
+            </div>
+            <!-- CARDS -->
+            <ul
+              class="d-flex justify-content-around flex-wrap list-unstyled movie__list"
+            ></ul>
+            <!-- PAGINATION -->
+            <!-- <nav aria-label="..." class="mt-5">
+              <ul class="pagination pagination-md justify-content-center">
+                <li class="page-item active" aria-current="page">
+                  <span class="page-link">1</span>
+                </li>
+                <li class="page-item">
+                  <a class="page-link" href="#">2</a>
+                </li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item"><a class="page-link" href="#">4</a></li>
+              </ul>
+            </nav> -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="movie-modal position-fixed hidden">
+      <div class="modal__top bg-primary rounded-top p-4">
+        <button class="close-modal">×</button>
+      </div>
+      <div class="modal__body">
+        <h2 class="modal__title">Patton Oswalt: Annihilation</h2>
+        <div class="modal__info-wrap">
+          <p>
+            <i class="reting__star fas fa-star"></i
+            ><i class="reting__star fas fa-star"></i
+            ><i class="reting__star fas fa-star"></i
+            ><i class="reting__star fas fa-star"></i
+            ><i class="reting__star fas fa-star-half-alt"></i>
+            <span class="modal__reting">7.2</span>
+          </p>
+          <p>
+            <i class="fas fa-clock"></i>
+            <span class="modal__runtime">1 hours 3 minute</span>
+          </p>
+          <p>
+            <i class="fas fa-calendar"></i>
+            <span class="modal__year">2007</span>
+          </p>
+        </div>
+
+        <h5>Categoties:</h5>
+        <p class="modal__categoty">Documentary, Drama, News</p>
+        <h5>Information:</h5>
+        <p class="modal__info">
+          After being gone for a decade a country star returns home to the love
+          he left behind.
+        </p>
+      </div>
+    </div>
+    <script src="./js/movies-new.js"></script>
+    <script src="./js/script.js"></script>
+    <script src="./bootstrap/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
